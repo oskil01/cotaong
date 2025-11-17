@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merci pour votre inscription</title>
+<style>
+  /* ==== RESET ==== */
+  body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+  table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  img { -ms-interpolation-mode: bicubic; }
+  body { margin: 0; padding: 0; width: 100% !important; height: 100% !important; font-family: 'Helvetica', 'Arial', sans-serif; background-color: #f4f6fa; }
+
+  /* ==== GENERAL ==== */
+  a { text-decoration: none; color: #ffffff; }
+  .button { background-color: #03337f; padding: 12px 25px; border-radius: 50px; display: inline-block; font-weight: bold; transition: background 0.3s; }
+  .button:hover { background-color: #0069bd; }
+
+  /* ==== MOBILE ==== */
+  @media screen and (max-width: 600px) {
+    .container { width: 95% !important; }
+    .hero-text { font-size: 24px !important; }
+    .content-text { font-size: 16px !important; }
+  }
+</style>
+</head>
+<body>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="center" style="padding: 20px 0;">
+        <table class="container" border="0" cellpadding="0" cellspacing="0" width="600" style="background-color: #ffffff; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+          <!-- Header -->
+          <tr>
+            <td align="center" style="background-color: #03337f; padding: 30px;">
+              <h1 style="color: #ffffff; margin: 0; font-size: 32px;">Merci pour votre inscription !</h1>
+            </td>
+          </tr>
+
+          <!-- Hero Image --> 
+          <tr>
+            <td align="center">
+              <img src="http://cota-pink.vercel.app/images/MailNewsletterHeader.jpg" alt="Merci" width="100%" style="display:block; border:0; outline:none; text-decoration:none; max-width:600px; width:100%; height:auto;">
+            </td>
+          </tr>
+
+          <!-- Body Content -->
+          <tr>
+            <td style="padding: 30px; text-align: center;">
+              <p class="hero-text" style="font-size: 28px; color: #333333; margin: 0 0 20px;">Salut !</p>
+              <p class="content-text" style="font-size: 18px; color: #555555; margin: 0 0 25px;">
+                Nous vous remercions de vous être inscrit à notre newsletter. Vous recevrez bientôt toutes nos dernières actualités, formations et opportunités directement dans votre boîte mail.
+              </p>
+              <a href="http://cota-pink.vercel.app" class="button" target="_blank">Visitez notre site</a>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 20px; text-align: center; background-color: #f4f6fa; font-size: 14px; color: #999999;">
+              COTA &copy; 2025 — Tous droits réservés.<br>
+              Vous pouvez <a href="{{ unsubscribe_link }}" style="color: #0069bd;">vous désinscrire</a> à tout moment.
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
