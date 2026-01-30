@@ -11,9 +11,9 @@ const Footer = () => {
   const quickLinks = [
     {label: "Accueil", href:"#"},
     {label: "A propos de COTA", href:"a-propos"},
-    {label: "Notre équipe", href:"#"},
+    {label: "Notre équipe", href:"ressources"},
     {label: "Actualités", href:"#"},
-    {label: "Offres d'emploi", href:"#"},
+    {label: "Offres d'emploi", href:"ressources"},
     {label: "Confidentialité & Vie privée", href:"#"},
   ];
   const domaines = [
@@ -52,7 +52,6 @@ const Footer = () => {
     <footer 
       className="footer-bg text-white overflow-hidden relative py-12 
       px-4 sm:py-16 md:py-20 md:px-12 lg:px-20"
-      data-aos='fade-up'
     > 
     <div className="max-w-7xl mx-auto">
       {/* Containeur principal */}
@@ -169,12 +168,12 @@ const Footer = () => {
       </div>
       <div className="border-t border-gray-700 pt-8 text-center">
         <p className="text-gray-400 flex items-center justify-center gap-1 whitespace-nowrap text-sm sm:text-base md:text-base px-4 sm:px-6">
-  @ 2025 COTA - Tous droits reservés
-  <span className="w-4 h-4 sm:w-4 sm:h-4 text-[#CA451B] flex-shrink-0">
-    <Heart className="w-full h-full fill-current" />
-  </span>
-  Powered by OSKIL
-</p>
+          @ 2025 COTA - Tous droits reservés
+          <span className="w-4 h-4 sm:w-4 sm:h-4 text-[#CA451B] flex-shrink-0">
+            <Heart className="w-full h-full fill-current" />
+          </span>
+          Powered by OSKIL
+        </p>
       </div>
       </div>
       <div className="absolute border-2 border-[#006176] bottom-20

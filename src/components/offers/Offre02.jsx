@@ -10,6 +10,8 @@ import {
   CheckCircle
 } from 'lucide-react';
 
+import NavMenu from "../NavMenu";
+import Footer from "../Footer";
 
 function Offre02() {
 

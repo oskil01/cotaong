@@ -47,20 +47,6 @@ export default function OrganesGestionVitePublic() {
         "Suivre les indicateurs de performance organisationnelle.",
       ],
       icon: <Briefcase className="w-12 h-12 text-[#03337F]" />,
-      leader: {
-        name: "TAMBWE RAMAZANI Junior",
-        role: "Président & D.G",
-        bio: `Technicien en Développement rural (planification régionale)
-        et Expert en management des projets avec une expérience de +5 ans
-        incluant la gestion des équipes et supervision terrain.`,
-        photo: "/images/Junior.png",
-        socials: {
-          facebook: "#",
-          linkedin: "#",
-          twitter: "#",
-          messageCircle: "http://wa.me/243820838387",
-        },
-      },
     },
     {
       id: 3,
@@ -74,13 +60,6 @@ export default function OrganesGestionVitePublic() {
         "Assurer la communication interne et externe.",
       ],
       icon: <Settings className="w-12 h-12 text-[#03337F]" />,
-      leader: {
-        name: "BAHATI MURHULA Dieumerci",
-        role: "Secrétaire & Admin RH",
-        bio: "Professionnelle du développement avec plus de 12 ans d’expérience.",
-        photo: "/images/noprofile.jpg",
-        socials: { facebook: "#", linkedin: "#", twitter: "#", messageCircle: "#" },
-      },
     },
     {
       id: 4,
@@ -94,18 +73,6 @@ export default function OrganesGestionVitePublic() {
         "Assurer la conformité aux principes humanitaires et standards Sphere.",
       ],
       icon: <Cpu className="w-12 h-12 text-[#03337F]" />,
-      leader: {
-        name: "Sylvano KITENGE",
-        role: "Directeur de programme & Directeur technique",
-        bio: "David supervise les programmes communautaires et Isabelle gère les aspects techniques.",
-        photo: "/images/noprofile.jpg",
-        socials: {
-          facebook: "#",
-          linkedin: "#",
-          twitter: "#",
-          messageCircle: "http://wa.me/243820838387",
-        },
-      },
     },
   ];
 

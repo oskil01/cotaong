@@ -11,6 +11,8 @@ import {
   ChevronRight,
 } from "lucide-react";
 
+import ImageVolontariat from '../assets/offers/volontaires.jpg'
+
 export default function RecentNews() {
   const [current, setCurrent] = useState(0);
   const sliderRef = useRef(null);
@@ -18,31 +20,14 @@ export default function RecentNews() {
 
   const news = [
     {
-      title: "Lancement du programme d’accompagnement des jeunes",
-      author: "CFEN",
-      date: "15 Octobre 2025",
-      image:
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+      title: "AMI : Recrutement de plusieurs volontaires pour des postes vacants dans la province du Tanganyika.",
+      author: "COTA ONG",
+      date: "28 Janvier 2026",
+      image: ImageVolontariat ,
       description:
-        "Un programme innovant pour soutenir les jeunes entrepreneurs et renforcer leurs compétences en gestion, innovation et leadership.",
-    },
-    {
-      title: "Atelier sur l’innovation numérique et la transformation locale",
-      author: "CFEN",
-      date: "10 Octobre 2025",
-      image:
-        "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80",
-      description:
-        "Des experts en technologie et développement durable réunis pour explorer le rôle du numérique dans la croissance communautaire.",
-    },
-    {
-      title: "Signature du partenariat avec le Ministère du Plan",
-      author: "CFEN",
-      date: "05 Octobre 2025",
-      image:
-        "https://images.unsplash.com/photo-1532619187608-e5375cab36aa?auto=format&fit=crop&w=1200&q=80",
-      description:
-        "Un engagement fort pour la planification participative et l’optimisation des politiques publiques à impact local.",
+        `Dans le cadre du renforcement des capacités opérationnelles et pour combler
+         les postes vacants au sein du personnel, nous recherchons des volonatires dériseux de travailler avec nous pour la mise en oeuvre du PAO-26. 
+        `,
     },
     {
       title: "Lancement du CFEN TechLab",

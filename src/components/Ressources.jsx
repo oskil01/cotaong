@@ -4,7 +4,7 @@ import {
   Handshake, 
   Briefcase, 
   ArrowRight, 
-  Circle 
+  Circle,  
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -81,7 +81,7 @@ export default function RessourcesIntro() {
               l’accompagnement, la transformation et l’innovation sociale.
             </p>
             <Link
-              // to='/ressources' 
+              to='/ressources' 
               className="mt-6 flex justify-center items-center 
               text-[#00E0FF] font-semibold gap-2 hover:underline 
               cursor-pointer">
@@ -111,7 +111,7 @@ export default function RessourcesIntro() {
               et la recherche d’un impact durable et mesurable.
             </p>
             <Link
-              // to='/ressources'  
+              to='/ressources'  
               className="mt-6 flex justify-center items-center text-[#CA451B] 
               font-semibold gap-2 hover:underline cursor-pointer">
               Voir plus <ArrowRight className="w-4 h-4" />
@@ -142,7 +142,7 @@ export default function RessourcesIntro() {
               expertise pour renforcer nos actions.
             </p>
             <Link 
-              // to='/ressources' 
+              to='/ressources' 
               className="mt-6 flex justify-center items-center text-[#00AB9A] 
               font-semibold gap-2 hover:underline cursor-pointer">
               Voir les offres <ArrowRight className="w-4 h-4" />

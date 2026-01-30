@@ -8,6 +8,12 @@ import { useParams, Link } from "react-router-dom";
 
 import Offre01 from "../components/offers/Offre01";
 import Offre02 from "../components/offers/Offre02";
+import Offre03 from "../components/offers/Offre03";
+import Offre04 from "../components/offers/Offre04";
+import Offre05 from "../components/offers/Offre05";
+import Offre06 from "../components/offers/Offre06";
+import Offre07 from "../components/offers/Offre07";
+import Offre08 from "../components/offers/Offre08";
 
 const offres = [
   {
@@ -26,6 +32,54 @@ const offres = [
       </>
     )
   },
+  {
+    id: 3,
+    content :(
+      <>
+        <Offre03 />
+      </>
+    )
+  },
+  {
+    id: 4,
+    content :(
+      <>
+        <Offre04 />
+      </>
+    )
+  },
+  {
+    id: 5,
+    content :(
+      <>
+        <Offre05 />
+      </>
+    )
+  },
+   {
+    id: 6,
+    content :(
+      <>
+        <Offre06 />
+      </>
+    )
+  },
+   {
+    id: 7,
+    content :(
+      <>
+        <Offre07 />
+      </>
+    )
+  },
+   {
+    id: 8,
+    content :(
+      <>
+        <Offre08 />
+      </>
+    )
+  },
 ];
 
 export default function OffresDetails() {
@@ -37,7 +91,7 @@ export default function OffresDetails() {
   }
 
   return (
-    <div className="">
+    <div>
       <NavMenu />
       <div className="mx-auto bg-white/70 backdrop-blur-lg rounded-2xl shadow-lg">
         <div className="pt-14 md:pt-25">
@@ -45,7 +99,7 @@ export default function OffresDetails() {
         </div>
 
         <div className="max-w-6xl mx-auto mt-8 py-8 px-8">
-          <Link to="/ressources" className="text-blue-700 hover:underline">
+          <Link to="/ressources" className="bg-[#CA451B] text-white px-5 py-3 rounded-full shadow-lg hover:bg-[#A23716] font-semibold">
             ← Retour aux offres
           </Link>
         </div>

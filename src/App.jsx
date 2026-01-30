@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import NavMenu from "./components/NavMenu";
 import Hero from "./components/Hero";
 import PopupInfo from "./components/PopupInfo";
+import Actualites from "./components/Actualites";
 import About from "./components/About";
 import WhyCota from "./components/WhyCota";
 import Domaines from "./components/Domaines";
@@ -20,6 +21,7 @@ import Apropos from "./pages/Apropos";
 import DomainesDetails from "./pages/DomainesDetails";
 import RessourcesDetails from "./pages/RessourcesDetails"; 
 import OffresDetails from "./pages/OffresDetails";
+
 // === Page d'accueil combinée ===
 const Home = () => {
   return (
@@ -27,6 +29,7 @@ const Home = () => {
       <PopupInfo />
       <NavMenu />
       <Hero />
+      <Actualites />
       <About />
       <WhyCota />
       <Domaines />
