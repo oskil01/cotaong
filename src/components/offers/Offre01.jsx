@@ -11,16 +11,11 @@ import {
   Briefcase,
 } from "lucide-react";
 
-import { Helmet } from "react-helmet-async";
-
 const pageUrl = window.location.href;
 
 export default function Offre01() {
   const { id } = useParams();
   const [openShare, setOpenShare] = useState(false);
-
-  const AfficheOffre =
-  "https://cotaong.vercel.app/images/offres/directeur-programmes-cota.jpg";
 
   // === Donnée simulée (à remplacer par API plus tard)
   const offre = {
