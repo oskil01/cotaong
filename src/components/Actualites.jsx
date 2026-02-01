@@ -1,8 +1,11 @@
 "use client";
+
 import { Circle } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
+
 import {
   CalendarDays,
   ArrowRight,
@@ -12,6 +15,7 @@ import {
 } from "lucide-react";
 
 import ImageVolontariat from '../assets/offers/volontaires.jpg'
+import Communique from '/communique.jpg'
 
 export default function RecentNews() {
   const [current, setCurrent] = useState(0);
@@ -20,6 +24,7 @@ export default function RecentNews() {
 
   const news = [
     {
+      id: 1,
       title: "AMI : Recrutement de plusieurs volontaires pour des postes vacants dans la province du Tanganyika.",
       author: "COTA ONG",
       date: "28 Janvier 2026",
@@ -30,13 +35,16 @@ export default function RecentNews() {
         `,
     },
     {
-      title: "Lancement du CFEN TechLab",
-      author: "CFEN",
-      date: "01 Octobre 2025",
-      image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+      id: 2,
+      title: "COMMUNIQUE OFFICIEL : Le Corps Technique pour l'Accompagnement (COTA) annonce la reprise de ses activités pour l'année 2026",
+      author: "COTA ONG",
+      date: "05 Janvier 2026",
+      image: Communique,
       description:
-        "Un espace d’expérimentation technologique dédié à l’éducation, la recherche et l’inclusion numérique des jeunes talents.",
+        `La Direction Générale du Corps Technique pour l’Accompagnement (COTA) porte à la connaissance 
+          de l’ensemble de ses membres, de ses partenaires techniques et financiers, 
+          ainsi que des communautés bénéficiaires, que la reprise effective de ses 
+          activités opérationnelles est fixée au 12 janvier 2026.`,
     },
   ];
 
@@ -157,10 +165,14 @@ export default function RecentNews() {
                       <CalendarDays size={16} /> {item.date}
                     </span>
                   </div>
-                  <button className="group flex items-center gap-2 bg-[#00AB9A] hover:bg-[#006176] text-white px-6 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg w-fit">
-                    Lire plus{" "}
-                    <ArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
-                  </button>
+                    <Link
+                      to={`/actualites/${item.id}`}
+                      className="group inline-flex w-fit items-center gap-2 
+                                bg-[#00AB9A] hover:bg-[#006176] 
+                                text-white px-6 py-2 rounded-full"
+                    >
+                      Lire plus <ArrowRight />
+                    </Link>
                 </div>
               </div>
             ))}

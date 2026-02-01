@@ -21,6 +21,8 @@ import Apropos from "./pages/Apropos";
 import DomainesDetails from "./pages/DomainesDetails";
 import RessourcesDetails from "./pages/RessourcesDetails"; 
 import OffresDetails from "./pages/OffresDetails";
+import ActualiteDetails from "./pages/ActualitesDetails";
+import ActualitesPage from "./pages/Actualites"
 
 // === Page d'accueil combinée ===
 const Home = () => {
@@ -60,6 +62,8 @@ const App = () => {
         <Route path="/domaines" element={<DomainesDetails />} />
         <Route path="/ressources" element={<RessourcesDetails />} />
         <Route path="/offres/:id" element={<OffresDetails />} /> 
+        <Route path="/actualites" element={<ActualitesPage />} />
+        <Route path="/actualites/:id" element={<ActualiteDetails />} />
       </Routes>
     </Router>
   );

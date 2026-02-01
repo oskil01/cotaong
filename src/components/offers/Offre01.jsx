@@ -379,25 +379,30 @@ export default function Offre01() {
 
 
         {/* Partager */}
-        <div className="relative">
+        {/* Partager */}
+        <div>
           <button
-            onClick={() => setOpenShare(!openShare)}
+            onClick={async () => {
+              if (navigator.share) {
+                try {
+                  await navigator.share({
+                    title: document.title,
+                    text: 'Découvrez cette offre de COTA',
+                    url: window.location.href,
+                  });
+                } catch (err) {
+                  console.error('Erreur de partage :', err);
+                }
+              } else {
+                // Fallback : copie le lien
+                navigator.clipboard.writeText(window.location.href);
+                alert('Votre navigateur ne supporte pas le partage direct. Le lien a été copié.');
+              }
+            }}
             className="bg-green-700 text-white p-3 rounded-full shadow-lg hover:bg-green-600"
           >
             <Share2 />
           </button>
-
-          {openShare && (
-            <div className="absolute bottom-14 left-1/2 transform -translate-x-1/2 bg-white rounded-lg shadow p-3 space-y-2 w-48">
-              <button onClick={copyLink} className="flex items-center gap-2 text-sm hover:text-blue-700">
-                <Copy size={16} /> Copier le lien
-              </button>
-              <a className="flex items-center gap-2 text-sm hover:text-blue-700" href="www.facebook.com"><Facebook size={16}/> Facebook</a>
-              <a className="flex items-center gap-2 text-sm hover:text-blue-700" href="#"><Twitter size={16}/> Twitter</a>
-              <a className="flex items-center gap-2 text-sm hover:text-blue-700" href="#"><Linkedin size={16}/> LinkedIn</a>
-              <a className="flex items-center gap-2 text-sm hover:text-blue-700" href="#"><Instagram size={16}/> Instagram</a>
-            </div>
-          )}
         </div>
 
         {/* Postuler */}
