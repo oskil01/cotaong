@@ -72,14 +72,8 @@ const Footer = () => {
             </div>
           </div>
           {/* A PROPOS */}
-          <p className="text-gray-400 leading-relaxed">
-            Le Corps Technique pour l’Accompagnement « COTA »
-            ,est une organisation à but non lucratif de droit congolais,
-            humanitaire, innovante, multisectorielle et professionnelle,
-            spécialisée dans l’accompagnement technique et stratégique aux
-            entreprises, ONG, institutions publiques et communautés, afin de
-            contribuer à leur performance, leur efficacité et leur impact sur le
-            développement durable.
+          <p className="text-gray-400 text-lg leading-relaxed">
+            Un partenaire dans l'action! Un pionnier dans le progrès!
           </p>
           <div className="flex gap-4">
             {socialLinks.map((social, idx) => (

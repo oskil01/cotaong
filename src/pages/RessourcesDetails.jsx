@@ -11,6 +11,7 @@ import {
   Hourglass 
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import NavMenu from "../components/NavMenu";
 import Footer from "../components/Footer";
@@ -227,9 +228,11 @@ export default function RessourcesDetails() {
             <p className="uppercase text-xl font-semibold text-green-600 mb-4"># Offres d’emploi</p>
             <h2 className="text-5xl font-bold text-gray-800">Travailler avec nous</h2>
           </div>
-          <button className="bg-blue-900 text-white px-6 py-2 rounded-md hover:bg-blue-800 transition">
-            Déposer un CV
-          </button>
+          <Link to="/depot-cv-indisponible">
+            <button className="bg-blue-900 text-white px-6 py-2 rounded-md hover:bg-blue-800 transition">
+              Déposer un CV
+            </button>
+          </Link>
         </div>
 
         {/* Cartes des offres */}

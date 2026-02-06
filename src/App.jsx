@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 // === COMPONENTS (accueil) ===
 import NavMenu from "./components/NavMenu";
 import Hero from "./components/Hero";
-import PopupInfo from "./components/PopupInfo";
+// import PopupInfo from "./components/PopupInfo";
 import Actualites from "./components/Actualites";
 import About from "./components/About";
 import WhyCota from "./components/WhyCota";
@@ -23,12 +23,13 @@ import RessourcesDetails from "./pages/RessourcesDetails";
 import OffresDetails from "./pages/OffresDetails";
 import ActualiteDetails from "./pages/ActualitesDetails";
 import ActualitesPage from "./pages/Actualites"
+import DepotCvIndisponible from "./pages/DepotCvIndisponible";
 
 // === Page d'accueil combinée ===
 const Home = () => {
   return (
     <div className="pt-17 md:pt-30">
-      <PopupInfo />
+      {/* <PopupInfo /> */}
       <NavMenu />
       <Hero />
       <Actualites />
@@ -64,6 +65,7 @@ const App = () => {
         <Route path="/offres/:id" element={<OffresDetails />} /> 
         <Route path="/actualites" element={<ActualitesPage />} />
         <Route path="/actualites/:id" element={<ActualiteDetails />} />
+        <Route path="/depot-cv-indisponible" element={<DepotCvIndisponible />} />
       </Routes>
     </Router>
   );
