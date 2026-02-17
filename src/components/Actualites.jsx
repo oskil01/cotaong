@@ -16,6 +16,7 @@ import {
 
 import ImageVolontariat from '../assets/offers/volontaires.jpg'
 import Communique from '/communique.jpg'
+import NovatechImg from "/novatech.jpg";
 
 export default function RecentNews() {
   const [current, setCurrent] = useState(0);
@@ -45,6 +46,20 @@ export default function RecentNews() {
           de l’ensemble de ses membres, de ses partenaires techniques et financiers, 
           ainsi que des communautés bénéficiaires, que la reprise effective de ses 
           activités opérationnelles est fixée au 12 janvier 2026.`,
+    },
+    {
+      id: 3,
+      title: "Annonce de l’initiative « NOVATECH » par le Corps Technique pour l’Accompagnement (COTA)",
+      author: "COTA ONG",
+      date: "17 Février 2026",
+      image: NovatechImg,
+      description:
+        `Dans le cadre de son axe stratégique relatif à l’innovation 
+        et aux technologies numériques, COTA a le plaisir d’annoncer le 
+        lancement officiel de son initiative dénommée « NOVATECH ». 
+        COTA invite les institutions publiques, les ONG, les entreprises, 
+        les jeunes innovateurs, les start-ups et les partenaires techniques 
+        et financiers à rejoindre cette dynamique innovante.`,
     },
   ];
 

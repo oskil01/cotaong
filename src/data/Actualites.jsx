@@ -1,7 +1,9 @@
 // src/data/actualites.jsx
-import React from "react";
+
 import ImageVolontariat from "/AfficheOffre.jpg";
 import Communique from "/communique.jpg";
+import NovatechImg from "/novatech.jpg";
+import NovatechImg2 from "/novatech_2.jpg"
 
 import { Link } from "react-router-dom";
 
@@ -104,4 +106,105 @@ export const actualites = [
       </>
     ),
   },
+  {
+    id: 3,
+    title: "Lancement officiel de l’initiative « NOVATECH » par le Corps Technique pour l’Accompagnement (COTA)",
+    author: "COTA ONG",
+    date: "17 Février 2026",
+    image: NovatechImg,
+    content: (
+      <>
+        <p>
+          Actif depuis le 20 octobre 2020 selon la loi N°004/2001 du 20 juillet 2001 portant 
+          dispositions générales applicables aux associations sans but lucratif et aux 
+          établissements d’utilité publique, <Link to="/a-propos" className="text-blue-600 font-semibold hover:text-blue-800 hover:underline transition duration-300">
+           le Corps Technique pour l’Accompagnement (COTA)
+          </Link> est une organisation non gouvernementale de droit congolais, apolitique, non confessionnelle, 
+          humanitaire et professionnelle, spécialisée dans l’accompagnement technique et stratégique 
+          afin de promouvoir un développement inclusif, durable et participatif en RDC. 
+        </p> <br />
+
+        <img src={NovatechImg2} className="rounded-lg" alt="NovatechImg" /> <br />
+
+        <h3 className="text-3xl font-extrabold xl:font-4xl"> 
+          <span className="text-gray-500">NOVATECH :</span> L’innovation 
+          numérique au service du développement entrepreneurial, 
+          humanitaire, institutionnel et communautaire en RDC.
+        </h3> 
+
+        <div className="flex items-center gap-2 my-4 pb-4">
+          <span className="h-1 w-15 bg-[#0069BD] rounded"></span>
+          <span className="h-1 w-12 bg-[#CA451B] rounded"></span>
+          <span className="h-1 w-20 bg-[#006176] rounded"></span>
+        </div>
+
+
+        <p>
+          Dans le cadre de son axe stratégique relatif à l’innovation 
+          et aux technologies numériques, COTA a le plaisir d’annoncer 
+          le lancement officiel de son initiative dénommée « NOVATECH ».
+        </p> <br />
+
+        <p>
+          NOVATECH est une plateforme d’innovation technologique conçue 
+          pour développer et promouvoir des solutions numériques adaptées 
+          aux réalités locales et nationales. Cette initiative vise à 
+          accompagner les partenaires, institutions publiques et privées, 
+          organisations de la société civile et communautés dans : 
+        </p>
+
+        <ul className="list-disc pl-6 space-y-1">
+          <li>
+          La conception et le déploiement de solutions digitales innovantes ;
+          </li>
+          <li>
+          Le développement de systèmes performants de suivi-évaluation ;
+          </li>
+          <li>
+          Le traitement statistique et la visualisation des données pour une prise de décision éclairée ;
+          </li>
+          <li>
+          La digitalisation des processus organisationnels et institutionnels ;
+          </li>
+          <li>
+          La valorisation des compétences et du génie congolais.
+          </li>
+        </ul>
+         <br />
+
+        <p>
+          À travers NOVATECH, COTA met un accent particulier sur la promotion 
+          du nationalisme économique, la valorisation du contexte local, 
+          l’intégration des valeurs culturelles et identitaires du pays, 
+          le développement de produits technologiques conçus par et pour les Congolais.
+        </p> <br />
+
+        <p>
+          L’objectif est clair : faire du numérique un levier stratégique de transformation durable, 
+          tout en renforçant l’autonomie technologique et institutionnelle en République Démocratique du Congo.
+        </p> <br />
+
+        <h3 className="text-2xl font-extrabold xl:font-3xl">Une vision tournée vers l’avenir</h3> <br />
+        <p>
+          Avec NOVATECH, COTA ambitionne de devenir un acteur de référence en innovation technologique et 
+          en accompagnement stratégique en RDC, contribuant à la construction d’organisations performantes 
+          et structurées, d’entreprises compétitives et durables, de communautés résilientes et autonomes, 
+          d’institutions engagées dans la bonne gouvernance et la redevabilité.
+        </p> <br />
+
+        <h3 className="text-2xl font-extrabold xl:font-3xl">Appel aux partenaires</h3> <br />
+        <p>
+          COTA invite les institutions publiques, les ONG, les entreprises, les jeunes innovateurs, 
+          les start-ups et les partenaires techniques et financiers à rejoindre cette dynamique innovante.
+        </p> <br />
+
+        <p>
+          Ensemble, faisons de la technologie un outil puissant au service du développement durable, 
+          participatif et responsable en République Démocratique du Congo.
+        </p>
+        
+      </>
+    ),
+  },
+  
 ];
