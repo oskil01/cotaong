@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import { Zap, GaugeCircle, Headset } from "lucide-react";
 
 import CotaCollect from "../components/solutions/CotaCollect";
-import CotaDb from "../components/solutions/CotaDB";
+import CotaDb from "../components/solutions/CotaDb";
 import Novatech from "../components/solutions/NovaTech";
 
 import AOS from "aos";
