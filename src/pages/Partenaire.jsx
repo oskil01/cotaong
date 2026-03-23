@@ -236,7 +236,6 @@ export default function Partenaire() {
           </div>
 
         </div>
-
       </section>
 
 

@@ -179,12 +179,12 @@ const NavMenu = () => {
 
             {/* PARTENAIRE MOBILE */}
             <a
-              href="https://example.com"
+              href="https://tally.so/r/RG4AyQ"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-center mt-3 px-4 py-3 bg-[#CA451B] text-white rounded-lg font-semibold hover:bg-[#a83716] transition"
             >
-              Devenir partenaire
+              DEVENIR PARTENAIRE
             </a>
 
           </div>
