@@ -11,23 +11,23 @@ const Footer = () => {
   const quickLinks = [
     {label: "Accueil", href:"#"},
     {label: "A propos de COTA", href:"a-propos"},
-    {label: "Notre équipe", href:"ressources"},
-    {label: "Actualités", href:"#"},
-    {label: "Offres d'emploi", href:"ressources"},
+    {label: "Notre équipe", href:"a-propos"},
+    {label: "Actualités", href:"actualites"},
+    {label: "Offres d'emploi", href:"opportunités"},
     {label: "Confidentialité & Vie privée", href:"#"},
   ];
   const domaines = [
-    {label: "Consultance & Accompagnement", href:'#'},
-    {label: "Innovation & Tech", href:'#'},
-    {label: "Entrepreneuriat & DE-MS", href:'#'},
-    {label: "Santé & Protection env.", href:'#'},
+    {label: "Consultance & Accompagnement Organisationnel", href:'#'},
+    {label: "Innovation Technologique", href:'#'},
+    {label: "Entrepreneuriat & Développement économique", href:'#'},
+    {label: "Santé & Protection de l'Environnement", href:'#'},
     {label: "Communication & Sensibilisation", href:'#'},
-    {label: "DH & Gouvernance", href:'#'},
+    {label: "Droits Humains & Gouvernance", href:'#'},
   ];
   const contactInfo = [
     {
       icon: Phone, 
-      text:'+243 820838387', 
+      text:'+243 820838387, +243 802913493, +243 982462703', 
       color:'text-[#CA451B]'
     },
     {
@@ -37,7 +37,7 @@ const Footer = () => {
     },
     {
       icon: MapPin, 
-      text:'`202 Avenue Tanganyika, Quartier Kituku, Commune de Lukuga, ville de Kalemie, Province du Tanganyika, RD Congo`', 
+      text:'202 Avenue Tanganyika, Quartier Kituku, Commune de Lukuga, ville de Kalemie, Province du Tanganyika, RD Congo', 
       color:'text-[#006176]',
       multiline: true
     },
@@ -162,7 +162,7 @@ const Footer = () => {
       </div>
       <div className="border-t border-gray-700 pt-8 text-center">
         <p className="text-gray-400 flex items-center justify-center gap-1 whitespace-nowrap text-sm sm:text-base md:text-base px-4 sm:px-6">
-          @ 2025 COTA - Tous droits reservés
+          @ 2026 COTA - Tous droits reservés
           <span className="w-4 h-4 sm:w-4 sm:h-4 text-[#CA451B] flex-shrink-0">
             <Heart className="w-full h-full fill-current" />
           </span>

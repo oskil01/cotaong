@@ -6,22 +6,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 
-import {
-  CalendarDays,
-  ArrowRight,
-  User,
-  ChevronLeft,
-  ChevronRight,
-} from "lucide-react";
+import { CalendarDays, ArrowRight, User } from "lucide-react";
 
-import ImageVolontariat from '../assets/offers/volontaires.jpg'
-import Communique from '/communique.jpg'
+import ImageVolontariat from '../assets/offers/volontaires.jpg';
+import Communique from '/communique.jpg';
 import NovatechImg from "/novatech.jpg";
 
 export default function RecentNews() {
   const [current, setCurrent] = useState(0);
-  const sliderRef = useRef(null);
-  const length = 4;
 
   const news = [
     {
@@ -29,11 +21,9 @@ export default function RecentNews() {
       title: "AMI : Recrutement de plusieurs volontaires pour des postes vacants dans la province du Tanganyika.",
       author: "COTA ONG",
       date: "28 Janvier 2026",
-      image: ImageVolontariat ,
-      description:
-        `Dans le cadre du renforcement des capacités opérationnelles et pour combler
-         les postes vacants au sein du personnel, nous recherchons des volonatires dériseux de travailler avec nous pour la mise en oeuvre du PAO-26. 
-        `,
+      image: ImageVolontariat,
+      description: `Dans le cadre du renforcement des capacités opérationnelles et pour combler
+         les postes vacants au sein du personnel, nous recherchons des volonatires dériseux de travailler avec nous pour la mise en oeuvre du PAO-26.`,
     },
     {
       id: 2,
@@ -41,8 +31,7 @@ export default function RecentNews() {
       author: "COTA ONG",
       date: "05 Janvier 2026",
       image: Communique,
-      description:
-        `La Direction Générale du Corps Technique pour l’Accompagnement (COTA) porte à la connaissance 
+      description: `La Direction Générale du Corps Technique pour l’Accompagnement (COTA) porte à la connaissance 
           de l’ensemble de ses membres, de ses partenaires techniques et financiers, 
           ainsi que des communautés bénéficiaires, que la reprise effective de ses 
           activités opérationnelles est fixée au 12 janvier 2026.`,
@@ -53,8 +42,7 @@ export default function RecentNews() {
       author: "COTA ONG",
       date: "17 Février 2026",
       image: NovatechImg,
-      description:
-        `Dans le cadre de son axe stratégique relatif à l’innovation 
+      description: `Dans le cadre de son axe stratégique relatif à l’innovation 
         et aux technologies numériques, COTA a le plaisir d’annoncer le 
         lancement officiel de son initiative dénommée « NOVATECH ». 
         COTA invite les institutions publiques, les ONG, les entreprises, 
@@ -63,164 +51,124 @@ export default function RecentNews() {
     },
   ];
 
+  // Tri par date (plus récente en premier)
+  const monthMap = {
+    Janvier: "01",
+    Février: "02",
+    Mars: "03",
+    Avril: "04",
+    Mai: "05",
+    Juin: "06",
+    Juillet: "07",
+    Août: "08",
+    Septembre: "09",
+    Octobre: "10",
+    Novembre: "11",
+    Décembre: "12",
+  };
+
+  const parseDate = (dateStr) => {
+    const [day, month, year] = dateStr.split(" ");
+    return new Date(`${year}-${monthMap[month]}-${day}`);
+  };
+
+  const sortedNews = [...news].sort(
+    (a, b) => parseDate(b.date) - parseDate(a.date)
+  );
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
-  }, []);
-
-  const nextSlide = () => setCurrent((prev) => (prev + 1) % length);
-  const prevSlide = () => setCurrent((prev) => (prev - 1 + length) % length);
-
-  // Auto défilement
-  useEffect(() => {
-    const autoSlide = setInterval(nextSlide, 7000);
-    return () => clearInterval(autoSlide);
-  }, []);
-
-  // Swipe mobile
-  useEffect(() => {
-    const slider = sliderRef.current;
-    let startX = 0;
-    if (!slider) return;
-    const handleTouchStart = (e) => (startX = e.touches[0].clientX);
-    const handleTouchEnd = (e) => {
-      const endX = e.changedTouches[0].clientX;
-      if (startX - endX > 50) nextSlide();
-      if (endX - startX > 50) prevSlide();
-    };
-    slider.addEventListener("touchstart", handleTouchStart);
-    slider.addEventListener("touchend", handleTouchEnd);
-    return () => {
-      slider.removeEventListener("touchstart", handleTouchStart);
-      slider.removeEventListener("touchend", handleTouchEnd);
-    };
   }, []);
 
   return (
     <section
       id="actualites"
-      className="relative overflow-hidden py-20 px-6 sm:px-10 md:px-16 
-      bg-gradient-to-br from-white via-gray-100 to-gray-200"
+      className="block lg:hidden relative overflow-hidden py-20 px-6 sm:px-10 md:px-16 bg-gradient-to-br from-white via-gray-100 to-gray-200"
     >
-      {/* === ARRIÈRE-PLAN ANIMÉ === */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,#00E0FF20,transparent_60%),radial-gradient(circle_at_80%_80%,#0069BD20,transparent_60%)] 
-        animate-[pulseHalo_12s_ease-in-out_infinite]" />
-        <div className="absolute inset-0 bg-[linear-gradient(45deg,rgba(0,0,0,0.03)_1px,transparent_1px),linear-gradient(-45deg,rgba(0,0,0,0.03)_1px,transparent_1px)] 
-        bg-[size:60px_60px] animate-[moveGrid_25s_linear_infinite]" />
-      </div>
-
-      {/* === ANIMATIONS CSS === */}
-      <style jsx>{`
-        @keyframes moveGrid {
-          0% {
-            background-position: 0 0, 0 0;
-          }
-          100% {
-            background-position: 100px 100px, -100px -100px;
-          }
-        }
-        @keyframes pulseHalo {
-          0%,
-          100% {
-            opacity: 0.6;
-          }
-          50% {
-            opacity: 1;
-          }
-        }
-      `}</style>
-
       {/* === TITRE === */}
-      <div
-        className="relative z-10 text-center mb-16"
-        data-aos="fade-down"
-      >
-        <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-4">
+      <div className="relative z-10 text-center mb-16" data-aos="fade-down">
+        <h2 className="text-4xl sm:text-6xl font-extrabold text-gray-800 mb-4">
           Nos actualités récentes
         </h2>
-        {/* CERCLES  */}
         <div className="flex justify-center gap-3 mt-4">
           <Circle className='text-[#006176] w-5 h-5' />
           <Circle className='text-[#CA451B] w-5 h-5' />
           <Circle className='text-[#03337F] w-5 h-5' />
-          <Circle className='text-[#0069BD] w-5 h-5' /> 
+          <Circle className='text-[#0069BD] w-5 h-5' />
         </div>
-        <p className="text-gray-600 max-w-7xl mx-auto text-base sm:text-lg mt-4">
-          Explorez les moments forts, les initiatives et les projets marquants
-          de COTA à travers le pays.
+        <p className="text-gray-600 max-w-6xl mx-auto text-base sm:text-lg mt-4">
+          Explorez les moments forts, les initiatives et les projets marquants de COTA à travers le pays.
         </p>
       </div>
 
-      {/* === CARROUSEL === */}
-      <div className="relative z-10 max-w-6xl mx-auto" ref={sliderRef}>
-        <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-          <div
-            className="flex transition-transform duration-700 ease-in-out"
-            style={{ transform: `translateX(-${current * 100}%)` }}
-          >
-            {news.map((item, index) => (
-              <div key={index} className="min-w-full flex-shrink-0 relative">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-[450px] object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-8 sm:p-10 flex flex-col justify-end">
-                  <h3 className="text-2xl sm:text-3xl font-bold mb-3 text-white drop-shadow-md">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-200 text-sm sm:text-base max-w-3xl mb-4">
-                    {item.description}
-                  </p>
-                  <div className="flex items-center justify-between text-sm text-gray-300 mb-4">
-                    <span className="flex items-center gap-2">
-                      <User size={16} /> {item.author}
-                    </span>
-                    <span className="flex items-center gap-2">
-                      <CalendarDays size={16} /> {item.date}
-                    </span>
-                  </div>
-                    <Link
-                      to={`/actualites/${item.id}`}
-                      className="group inline-flex w-fit items-center gap-2 
-                                bg-[#00AB9A] hover:bg-[#006176] 
-                                text-white px-6 py-2 rounded-full"
-                    >
-                      Lire plus <ArrowRight />
-                    </Link>
-                </div>
-              </div>
-            ))}
-          </div>
+      {/* === GRILLE ACTUALITÉS === */}
+      <div className="relative z-10 max-w-6xl mx-auto grid gap-8 lg:grid-cols-3">
 
-          {/* === NAVIGATION === */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white p-3 rounded-full shadow-md hover:shadow-lg transition z-20"
-          >
-            <ChevronLeft size={26} className="text-gray-700" />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white p-3 rounded-full shadow-md hover:shadow-lg transition z-20"
-          >
-            <ChevronRight size={26} className="text-gray-700" />
-          </button>
-        </div>
-
-        {/* === INDICATEURS === */}
-        <div className="flex justify-center mt-6 space-x-2">
-          {news.map((_, index) => (
-            <div
-              key={index}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                index === current
-                  ? "bg-[#006176] scale-110 shadow-[0_0_8px_#00AB9A]"
-                  : "bg-gray-400"
-              }`}
+        {/* ACTUALITÉ PRINCIPALE */}
+        <div className="lg:col-span-2 lg:row-span-2 group bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition">
+          <div className="overflow-hidden">
+            <img
+              src={sortedNews[0].image}
+              alt={sortedNews[0].title}
+              className="w-full h-[420px] object-cover group-hover:scale-105 transition duration-700"
             />
-          ))}
+          </div>
+          <div className="p-8">
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              {sortedNews[0].title}
+            </h3>
+            <p className="text-gray-600 mb-5 leading-relaxed">
+              {sortedNews[0].description}
+            </p>
+            <div className="flex items-center justify-between text-sm text-gray-500 mb-5">
+              <span className="flex items-center gap-2">
+                <User size={16}/> {sortedNews[0].author}
+              </span>
+              <span className="flex items-center gap-2">
+                <CalendarDays size={16}/> {sortedNews[0].date}
+              </span>
+            </div>
+            <Link
+              to={`/actualites/${sortedNews[0].id}`}
+              className="inline-flex items-center gap-2 bg-[#00AB9A] hover:bg-[#006176] text-white px-6 py-2 rounded-full"
+            >
+              Lire plus <ArrowRight/>
+            </Link>
+          </div>
         </div>
+
+        {/* ACTUALITÉS DROITE */}
+        {[sortedNews[1], sortedNews[2]].map((item, idx) => (
+          <div key={idx} className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition">
+            <div className="overflow-hidden">
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-52 object-cover group-hover:scale-105 transition duration-700"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-3">
+                {item.title}
+              </h3>
+              <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+                <span className="flex items-center gap-2">
+                  <User size={16}/> {item.author}
+                </span>
+                <span className="flex items-center gap-2">
+                  <CalendarDays size={16}/> {item.date}
+                </span>
+              </div>
+              <Link
+                to={`/actualites/${item.id}`}
+                className="inline-flex items-center gap-2 bg-[#00AB9A] hover:bg-[#006176] text-white px-5 py-2 rounded-full text-sm"
+              >
+                Lire plus <ArrowRight/>
+              </Link>
+            </div>
+          </div>
+        ))}
+
       </div>
 
       {/* === BOUTON GLOBAL === */}

@@ -320,7 +320,7 @@ export default function Apropos() {
   };
 
   const renderGrid = () => (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {items.map((it, idx) => (
           <button
@@ -428,8 +428,8 @@ export default function Apropos() {
 
       {/* === En-tête principal === */}
       <header
-        className="relative h-[36vh] md:h-[44vh] flex items-center 
-        justify-center text-center overflow-hidden mt-30 md:mt-40 fixed"
+        className="relative h-[46vh] md:h-[54vh] flex items-center 
+        justify-center mt-20 text-center overflow-hidden fixed"
         style={{
           backgroundImage: `linear-gradient(90deg, rgba(3,51,127,0.8), rgba(0,105,189,0.65)), url(${bannerImage})`,
           backgroundSize: "cover",
@@ -437,9 +437,9 @@ export default function Apropos() {
         }}
       >
         <div className="absolute inset-0 bg-black/25" />
-        <div className="relative z-10 px-6">
+        <div className="relative z-10 ">
           <h1
-            className="text-4xl md:text-7xl font-extrabold text-white
+            className="text-4xl md:text-6xl xl:text-8xl font-extrabold text-white
             mb-8"
             data-aos="fade-down"
           >

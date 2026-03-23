@@ -139,7 +139,7 @@ export default function DomainesDetails() {
       <section
         className="relative h-[45vh] flex flex-col 
         justify-center items-center text-center text-white 
-        bg-cover bg-center mt-10 md:mt-40"
+        bg-cover bg-center"
         style={{
           backgroundImage: `linear-gradient(to right, rgba(0, 0, 132, 0.8), rgba(88, 255, 88, 0.2)), url(${domaineImages[0]})`,
         }}
@@ -154,7 +154,8 @@ export default function DomainesDetails() {
 
       {/* SECTION PRINCIPALE AVEC FOND FLOU */}
       <section
-        className="relative min-h-screen py-16 px-4 sm:px-8 lg:px-20 overflow-hidden"
+        className="relative min-h-screen py-16 px-4 sm:px-8 lg:px-20 
+        overflow-hidden"
         style={{
           backgroundImage: `url(${domaineImages[5]})`,
           backgroundSize: "cover",
@@ -176,7 +177,10 @@ export default function DomainesDetails() {
               key={domaine.id}
               data-aos="fade-up"
               data-aos-delay={i * 80}
-              className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 rounded-3xl overflow-hidden shadow-lg bg-white/15 backdrop-blur-xl border border-white/20 p-6 sm:p-10"
+              className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 
+              rounded-3xl overflow-hidden shadow-lg bg-white/15 
+              backdrop-blur-xl border border-white/20 p-6 sm:p-10
+              max-w-6xl mx-auto"
             >
               {/* Contenu texte à gauche */}
               <div>
@@ -186,21 +190,21 @@ export default function DomainesDetails() {
                     {domaine.title}
                   </h2>
                 </div>
-                <p className="text-gray-100 text-sm sm:text-base mb-4 leading-relaxed">
+                <p className="text-white text-lg sm:text-xl py-4 mb-4 leading-relaxed">
                   {domaine.description}
                 </p>
-                <ul className="space-y-2 mb-4">
+                <ul className="space-y-6 mb-4">
                   {domaine.points.map((pt, idx) => (
                     <li
                       key={idx}
-                      className="flex items-start gap-2 text-gray-200 text-sm sm:text-base"
+                      className="flex items-start gap-2 text-gray-200 text-lg sm:text-xl"
                     >
                       <span className="text-blue-300 mt-1.5">●</span>
                       <span>{pt}</span>
                     </li>
                   ))}
                 </ul>
-                <p className="font-semibold text-white mt-3">
+                <p className="font-semibold bg-white/20 p-6 rounded-xl text-lg sm:text-xl text-white mt-3">
                   Objectif :{" "}
                   <span className="font-normal text-gray-100">
                     {domaine.objectif}

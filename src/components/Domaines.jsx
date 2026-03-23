@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Handshake, Rocket, HandCoins, Circle, CheckCircle, ArrowRight } from "lucide-react";
-import domaine1 from "../assets/domaine1.jpg";
-import domaine2 from "../assets/domaine2.jpg";
+import domaine1 from "../assets/slide2.png";
+import domaine2 from "/images/novatech.jpg";
 import domaine3 from "../assets/domaine3.jpg";
 
 const Domaines = () => {
@@ -64,7 +64,10 @@ const Domaines = () => {
   ];
 
   return (
-    <section id="domaines" className="relative overflow-hidden py-12 px-4 sm:py-16 md:px-12 lg:px-20 text-white">
+    <section 
+      id="domaines" 
+      className="relative overflow-hidden py-12 px-4 sm:py-16 md:px-12 lg:px-20 text-white"
+    >
       {/* BACKGROUND CAROUSEL */}
       <div className="absolute inset-0 z-0">
         {backgroundImages.map((img, index) => (
@@ -82,7 +85,7 @@ const Domaines = () => {
       </div>
 
       {/* CONTENT */}
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-center text-center mb-6" data-aos="fade-down">
           <div className="flex-1 max-w-2xl mx-auto space-y-6 mb-10 lg:mb-0">
             <h2 className="text-4xl sm:text-5xl md:text-[56px] font-extrabold mb-4 leading-tight">
@@ -98,14 +101,22 @@ const Domaines = () => {
         </div>
 
         {/* boutons filtres */}
-        <div className="flex flex-wrap gap-3 sm:gap-4 mb-8 sm:mb-12 justify-center" data-aos="fade-up" data-aos-delay="100">
+        <div 
+          className="flex flex-wrap gap-3 sm:gap-4 mb-8 sm:mb-12 justify-center" 
+          data-aos="fade-up" 
+          data-aos-delay="100"
+        >
           {domaines.map((ser) => (
             <button
               key={ser.id}
               onClick={() => setActiveDomaine(ser.id)}
-              className={`px-4 py-2 sm:px-6 sm:py-3 rounded-full font-medium flex items-center gap-2 transition-all text-sm sm:text-base ${
+              className={`px-4 py-2 sm:px-6 sm:py-3 rounded-full 
+                font-medium flex items-center gap-2 transition-all 
+                text-sm sm:text-base
+                ${
                 activeDomaine === ser.id ? `${ser.color} text-white shadow-lg` : `bg-white/20 text-gray-200 hover:bg-white/30`
-              }`}
+                }`
+              }
               data-aos="fade-up"
               data-aos-delay={ser.id * 100}
             >

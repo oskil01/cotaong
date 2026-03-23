@@ -203,7 +203,7 @@ export default function RessourcesDetails() {
   return (
     <div className="text-gray-800">
       {/* === NAVIGATION === */}
-      <NavMenu activePage="Ressources" />
+      <NavMenu activePage="opportunités" />
 
       {/* === BANNIÈRE === */}
       <section
@@ -215,7 +215,7 @@ export default function RessourcesDetails() {
           backgroundPosition: "center",
         }}
       >
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Nos Ressources</h1>
+        <h1 className="text-4xl md:text-6xl font-extrabold mb-4">Opportunités</h1>
         <p className="text-lg md:text-xl max-w-4xl mx-auto px-4">
           Découvrez nos offres, notre équipe, nos partenaires et d’autres ressources sur nos activités.
         </p>

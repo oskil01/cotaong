@@ -179,7 +179,7 @@ const Contact = () => {
       id='contact' 
       className='relative overflow-hidden bg-gradient-to-br from-blue-50 to-purple-50 py-16 px-4 sm:px-8 lg:px-16'
     >
-      <div className='max-w-7xl mx-auto'>
+      <div className='max-w-6xl mx-auto'>
         
         {/* === TITRE === */}
         <div className='text-center mb-10' data-aos='fade-down'>
@@ -225,7 +225,10 @@ const Contact = () => {
         <div className='flex flex-col lg:flex-row gap-10 items-start'>
           
           {/* === FORMULAIRE === */}
-          <div className='flex-1 w-full max-w-full bg-white rounded-2xl shadow-xl p-8 border border-gray-100 mx-auto sm:mx-0' data-aos='fade-right'>
+          <div className='flex-1 w-full max-w-full bg-white rounded-2xl 
+            shadow-xl p-8 border border-gray-100 mx-auto sm:mx-0' 
+            data-aos='fade-right'
+          >
             <form className='space-y-6 w-full' onSubmit={handleSubmit}>
               {renderFormFields()}
               <div data-aos='fade-up' data-aos-delay='300'>
@@ -247,7 +250,10 @@ const Contact = () => {
           <div className='flex-1 flex flex-col items-center lg:items-start w-full'>
             {activeTab === 'contact' ? (
               <>
-                <div className='w-full max-w-md h-72 overflow-hidden shadow-lg rounded-xl mb-6 mx-auto sm:mx-0' data-aos='zoom-in'>
+                <div className='w-full max-w-md h-72 overflow-hidden 
+                  shadow-lg rounded-xl mb-6 mx-auto sm:mx-0' 
+                  data-aos='zoom-in'
+                >
                   <img 
                     src={contactImage} 
                     alt="Nous contacter" 
