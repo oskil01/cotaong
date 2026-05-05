@@ -2,12 +2,20 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import hero from "../assets/hero.jpg";
+import about from "../assets/cota_fac.jpg"
 import slide2 from "../assets/slide2.png";
 import ImageVolontariat from "../assets/offers/volontaires.jpg";
 import Communique from "/communique.jpg";
 import NovatechImg from "/novatech.jpg";
+import CotaFac from "../assets/cota_fac.jpg"
 
 const slides = [
+  {
+    titleHighlight: "Bienvenu",
+    title: "chez COTA",
+    text: "Découvrez de quelle manière nos actions se pointent pour améliorer votre employabilité sur terrain.",
+    image: CotaFac,
+  },
   {
     titleHighlight: "Partenaire",
     title: "dans l'action",
@@ -17,7 +25,7 @@ const slides = [
   {
     titleHighlight: "Pionnier",
     title: "dans le progrès",
-    text: "Notre volonté est d'être à la pointe des pratiques techniques, garantissant un accompagnement efficace et adapté aux besoins de chacun.",
+    text: "Notre mission est d'être à la pointe des pratiques techniques, garantissant un accompagnement efficace et adapté aux besoins de chacun.",
     image: slide2,
   },
 ];
@@ -56,7 +64,7 @@ export default function HeaderCarousel() {
 
                   <h1 className="text-5xl sm:text-7xl md:text-7xl font-bold">
 
-                    <span className="bg-[#0069BD] px-4 py-1 mr-3">
+                    <span className="bg-[#0069BD] py-1 mr-3">
                       {slide.titleHighlight}
                     </span>
 

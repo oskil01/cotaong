@@ -48,10 +48,10 @@ function OfferItem({ offer }) {
     <div className="flex items-start justify-between py-6 border-b border-gray-300">
       
       <div className="flex items-start gap-4 max-w-[75%]">
-        <ChevronRight className="text-blue-600 mt-2 shrink-0" size={26} />
+        <ChevronRight className="text-[#03337F] t-2 shrink-0" size={26} />
 
         <div>
-          <h4 className="font-semibold text-gray-900 text-lg md:text-xl lg:text-2xl leading-snug">
+          <h4 className="font-semibold text-gray-900 text-md md:text-lg lg:text-lg leading-snug">
             {offer.title}
           </h4>
 
@@ -106,7 +106,7 @@ function Section({ title, color, data }) {
         className="relative rounded-sm overflow-hidden"
         style={{ background: color }}
       >
-        <div className="absolute left-0 top-0 bottom-0 w-3 bg-blue-700" />
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#03337F]" />
 
         <div className="pl-8 pr-6">
           {data.map((item, i) => (

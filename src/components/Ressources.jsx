@@ -4,8 +4,9 @@ import {
   Handshake, 
   Briefcase, 
   ArrowRight, 
-  Circle,  
+  Circle, Youtube, FileText, FolderOpen
 } from "lucide-react";
+
 import { Link } from "react-router-dom";
 
 export default function RessourcesIntro() {
@@ -65,90 +66,98 @@ export default function RessourcesIntro() {
           data-aos="fade-up"
           data-aos-delay="150"
         >
-          {/* ÉQUIPE */}
+
+          {/* YOUTUBE */}
           <div
-            className="group relative bg-white/10 backdrop-blur-2xl border border-white/10 rounded-2xl p-10 shadow-lg hover:shadow-[#00E0FF]/30 transition-all duration-700 hover:-translate-y-3 text-center"
+            className="group relative bg-white/10 backdrop-blur-2xl border border-white/10 rounded-2xl p-10 shadow-lg hover:shadow-[#FF0000]/30 transition-all duration-700 hover:-translate-y-3 text-center"
             data-aos="flip-left"
           >
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
-              <div className="p-5 bg-[#00E0FF]/20 border border-[#00E0FF]/30 rounded-full shadow-[0_0_20px_#00E0FF80] group-hover:scale-110 transition-transform duration-700">
-                <Users className="w-10 h-10 text-[#00E0FF]" />
+              <div className="p-5 bg-[#FF0000]/20 border border-[#FF0000]/30 rounded-full shadow-[0_0_20px_#FF000080] group-hover:scale-110 transition-transform duration-700">
+                <Youtube className="w-10 h-10 text-[#FF0000]" />
               </div>
             </div>
-            <h3 className="mt-10 text-2xl font-bold mb-3">Notre équipe</h3>
+
+            <h3 className="mt-10 text-2xl font-bold mb-3">
+              Notre chaîne YouTube
+            </h3>
+
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Une équipe d’experts multidisciplinaires passionnés par
-              l’accompagnement, la transformation et l’innovation sociale.
+              Suivez en temps réel nos activités, événements et interventions à travers
+              nos vidéos. Découvrez nos actions sur le terrain et restez informé de nos
+              initiatives.
             </p>
+
             <Link
-              to='/opportunités' 
-              className="mt-6 flex justify-center items-center 
-              text-[#00E0FF] font-semibold gap-2 hover:underline 
-              cursor-pointer">
-              <button>Découvrir</button><ArrowRight className="w-4 h-4" />
+              to="/ressources"
+              className="mt-6 flex justify-center items-center text-[#FF0000] font-semibold gap-2 hover:underline"
+            >
+              Découvrir <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
 
-          {/* PARTENAIRES */}
+          {/* RAPPORTS */}
           <div
-            className="group relative bg-white/10 backdrop-blur-2xl 
-            border border-white/10 rounded-2xl p-10 shadow-lg 
-            hover:shadow-[#CA451B]/30 transition-all duration-700 
-            hover:-translate-y-3 text-center"
+            className="group relative bg-white/10 backdrop-blur-2xl border border-white/10 rounded-2xl p-10 shadow-lg hover:shadow-[#CA451B]/30 transition-all duration-700 hover:-translate-y-3 text-center"
             data-aos="flip-up"
             data-aos-delay="200"
           >
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
-              <div className="p-5 bg-[#CA451B]/20 border border-[#CA451B]/30 
-                rounded-full shadow-[0_0_20px_#CA451B] group-hover:scale-110 
-                transition-transform duration-700">
-                <Handshake className="w-10 h-10 text-[#CA451B]" />
+              <div className="p-5 bg-[#CA451B]/20 border border-[#CA451B]/30 rounded-full shadow-[0_0_20px_#CA451B] group-hover:scale-110 transition-transform duration-700">
+                <FileText className="w-10 h-10 text-[#CA451B]" />
               </div>
             </div>
-            <h3 className="mt-10 text-2xl font-bold mb-3">Nos partenaires</h3>
+
+            <h3 className="mt-10 text-2xl font-bold mb-3">
+              Rapports
+            </h3>
+
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Des collaborations locales et internationales basées sur la confiance
-              et la recherche d’un impact durable et mesurable.
+              Consultez nos rapports d’activités, d’évaluation et de projets. Ces
+              documents reflètent notre transparence, nos résultats et l’impact de nos
+              actions sur le terrain.
             </p>
+
             <Link
-              to='/opportunités'  
-              className="mt-6 flex justify-center items-center text-[#CA451B] 
-              font-semibold gap-2 hover:underline cursor-pointer">
+              to="/ressources"
+              className="mt-6 flex justify-center items-center text-[#CA451B] font-semibold gap-2 hover:underline"
+            >
               Voir plus <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
 
-          {/* TRAVAILLER AVEC NOUS */}
+          {/* DOCUMENTS TECHNIQUES */}
           <div
-            className="group relative bg-white/10 backdrop-blur-2xl 
-            border border-white/10 rounded-2xl p-10 shadow-lg 
-            hover:shadow-[#00AB9A]/30 transition-all duration-700 
-            hover:-translate-y-3 text-center"
+            className="group relative bg-white/10 backdrop-blur-2xl border border-white/10 rounded-2xl p-10 shadow-lg hover:shadow-[#00AB9A]/30 transition-all duration-700 hover:-translate-y-3 text-center"
             data-aos="flip-right"
             data-aos-delay="250"
           >
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
-              <div className="p-5 bg-[#00AB9A]/20 border border-[#00AB9A]/30 
-                rounded-full shadow-[0_0_20px_#00AB9A] group-hover:scale-110 
-                transition-transform duration-700">
-                <Briefcase className="w-10 h-10 text-[#00AB9A]" />
+              <div className="p-5 bg-[#00AB9A]/20 border border-[#00AB9A]/30 rounded-full shadow-[0_0_20px_#00AB9A] group-hover:scale-110 transition-transform duration-700">
+                <FolderOpen className="w-10 h-10 text-[#00AB9A]" />
               </div>
             </div>
+
             <h3 className="mt-10 text-2xl font-bold mb-3">
-              Travailler avec nous
+              Documents techniques
             </h3>
+
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Rejoignez nos projets, postulez à nos offres ou proposez votre
-              expertise pour renforcer nos actions.
+              Accédez à nos manuels, procédures et guides techniques. Ces ressources
+              vous permettent de mieux comprendre nos méthodes de travail et nos
+              standards opérationnels.
             </p>
-            <Link 
-              to='/opportunités' 
-              className="mt-6 flex justify-center items-center text-[#00AB9A] 
-              font-semibold gap-2 hover:underline cursor-pointer">
-              Voir les offres <ArrowRight className="w-4 h-4" />
+
+            <Link
+              to="/ressources"
+              className="mt-6 flex justify-center items-center text-[#00AB9A] font-semibold gap-2 hover:underline"
+            >
+              Voir plus <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
+
         </div>
+        
       </div>
 
       {/* === ANIMATIONS PERSONNALISÉES === */}

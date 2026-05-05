@@ -173,7 +173,7 @@ const Domaines = () => {
 
         {/* BOUTON FINAL */}
         <div className="flex justify-center mt-6 md:mt-10" data-aos="fade-up" data-aos-delay="700">
-          <button onClick={() => navigate("/domaines")} className="bg-[#006176] hover:bg-[#00AB9A] text-white px-8 py-3 rounded-full text-sm sm:text-base font-medium shadow-md hover:shadow-lg flex items-center gap-2 transition-all">
+          <button onClick={() => navigate("/domaines")} className="bg-[#CA451B] hover:bg-[#CA45] text-white px-8 py-3 rounded-sm text-sm sm:text-base font-medium shadow-md hover:shadow-lg flex items-center gap-2 transition-all">
             Voir tous les domaines
             <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
           </button>

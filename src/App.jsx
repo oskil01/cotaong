@@ -17,6 +17,7 @@ import About from "./components/About";
 import WhyCota from "./components/WhyCota";
 import Domaines from "./components/Domaines";
 import Ressources from "./components/Ressources";
+import Strategies from "./components/Strategies"
 import Contact from "./components/Contact";
 import ProductsSection from "./components/ProductsSection";
 import NewsLetter from "./components/NewsLetter";
@@ -32,21 +33,24 @@ import ActualitesPage from "./pages/Actualites";
 import DepotCvIndisponible from "./pages/DepotCvIndisponible";
 import CavPage from "./pages/CavPage"
 import Partenaires from "./pages/Partenaire"
+import RessourcesPage from "./pages/RessourcesPage"
 import Solutions from "./pages/Solutions";
+import StrategiesPage from "./pages/StrategiesPage"
 
 // === Page d'accueil combinée ===
 const Home = () => (
   <div className="pt-17 md:pt-30">
     <NavMenu />
     <Hero />
-    <JobOffers />
+    {/* <JobOffers /> */}
     <Cav />
     <Actualites />
     <About />
     <WhyCota />
     <ProductsSection />
     <Domaines />
-    {/* <Ressources /> */}
+    <Strategies />
+    <Ressources />
     <Contact />
     <NewsLetter />
     <Footer />
@@ -186,6 +190,22 @@ const AppRoutes = () => {
               element={
                 <PageTransition>
                   <Solutions />
+                </PageTransition>
+              }
+            />
+            <Route
+              path="/strategies"
+              element={
+                <PageTransition>
+                  <StrategiesPage />
+                </PageTransition>
+              }
+            />
+             <Route
+              path="/ressources"
+              element={
+                <PageTransition>
+                  <RessourcesPage />
                 </PageTransition>
               }
             />

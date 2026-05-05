@@ -275,78 +275,7 @@ export default function RessourcesDetails() {
           </div>
         ))}
       </section>
-
-      {/* === NOTRE ÉQUIPE === */}
-      {/* <section className="py-16 text-center relative bg-gradient-to-b from-gray-100 to-white">
-        <p className="uppercase text-sm font-semibold text-green-600"># Notre équipe</p>
-        <h2 className="text-3xl font-bold mb-10">Un personnel qualifié</h2>
-
-        {/* Carrousel équipe */}
-        {/* <div className="flex items-center justify-center gap-4 mb-8">
-          <button onClick={prevSlide} className="bg-white rounded-full shadow p-2 hover:bg-gray-200">
-            <ChevronLeft />
-          </button>
-
-          <div className="flex gap-6 overflow-hidden w-full max-w-4xl justify-center">
-            {visibleMembers.map((member, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition w-full md:w-[45%]"
-              >
-                <img src={member.photo} alt={member.nom} className="w-24 h-24 object-cover rounded-full mx-auto mb-4" />
-                <h6 className="font-semibold">{member.nom}</h6>
-                <p className="text-sm text-gray-500">{member.fonction}</p>
-                <p className="text-sm mt-2 text-gray-700">{member.bio}</p>
-                <div className="flex justify-center gap-4 mt-3">
-                  <a href="#" className="text-blue-600 hover:text-blue-800"><Facebook size={18} /></a>
-                  <a href="#" className="text-gray-700 hover:text-black"><Twitter size={18} /></a>
-                  <a href="#" className="text-blue-700 hover:text-blue-900"><Linkedin size={18} /></a>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <button onClick={nextSlide} className="bg-white rounded-full shadow p-2 hover:bg-gray-200">
-            <ChevronRight />
-          </button>
-        </div> */}
-
-        {/* Boules indicatrices */}
-        {/* <div className="flex justify-center mt-4 space-x-2">
-          {Array.from({ length: Math.ceil(equipe.length / visibleCount) }).map((_, i) => (
-            <div
-              key={i}
-              className={`w-3 h-3 rounded-full ${i === Math.floor(index / visibleCount) ? "bg-blue-700" : "bg-gray-300"}`}
-            ></div>
-          ))}
-        </div>
-      </section> */} 
-
-      {/* === PARTENAIRES === */}
-      {/* <section className="max-w-6xl mx-auto px-4 py-16">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
-          <div>
-            <p className="uppercase text-sm font-semibold text-green-600"># Nos partenaires</p>
-            <h2 className="text-3xl font-bold text-gray-800">Ils nous font confiance</h2>
-          </div>
-          <button className="order-2 md:order-1 border border-red-600 text-red-600 px-6 py-2 rounded-md hover:bg-red-600 hover:text-white transition">
-            Devenir partenaire
-          </button>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 order-1 md:order-2">
-          {partenaires.map((logo, i) => (
-            <div
-              key={i}
-              className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition flex flex-col items-center"
-            >
-              <img src={`/images/${logo}`} alt="Partenaire" className="h-14 object-contain mb-2" />
-              <p className="text-sm font-semibold text-gray-700 uppercase">{logo.split(".")[0]}</p>
-            </div>
-          ))}
-        </div>
-      </section> */}
-
+      
       {/* === FOOTER === */}
       <Footer />
     </div>

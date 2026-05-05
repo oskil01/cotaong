@@ -81,7 +81,7 @@ const Newsletter = () => {
 
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight" data-aos="fade-down">
-          Rejoignez notre <span className="text-[#00bfff]">Newsletter</span>
+          Rejoignez notre <span className="text-[#CA451B]">Newsletter</span>
         </h2>
         <div className="flex justify-center gap-3 mt-4 md:mt-5">
           <Circle className="text-[#022256] w-5 h-5" />
@@ -90,7 +90,7 @@ const Newsletter = () => {
           <Circle className="text-[#CA451B] w-5 h-5" />
         </div>
 
-        <p className="text-gray-300 max-w-2xl mx-auto mb-10 mt-5 text-md" data-aos="fade-up" data-aos-delay="200">
+        <p className="text-gray-300 max-w-2xl mx-auto mb-10 mt-5 text-md md:text-lg" data-aos="fade-up" data-aos-delay="200">
           Recevez nos dernières actualités, opportunités et formations directement dans votre boîte mail. Soyez les premiers informés !
         </p>
 
@@ -113,7 +113,9 @@ const Newsletter = () => {
           <button
             type="submit"
             disabled={loading}
-            className="flex items-center gap-2 bg-[#00bfff] hover:bg-[#009adf] text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-[#00bfff]/40 disabled:opacity-50"
+            className="flex items-center gap-2 bg-[#CA451B] hover:bg-[#009adf] 
+            text-white px-8 py-3 rounded-full font-semibold transition-all 
+            duration-300 shadow-lg hover:shadow-[#00bfff]/40 disabled:opacity-50"
           >
             <Send className="w-5 h-5" />
             {loading ? "Envoi..." : "S’abonner"}
@@ -139,7 +141,7 @@ const Newsletter = () => {
           </div>
         )}
 
-        <p className="mt-6 text-sm text-gray-400" data-aos="fade-up" data-aos-delay="800">
+        <p className="mt-6 text-md md:text-lg text-gray-400" data-aos="fade-up" data-aos-delay="800">
           Nous respectons votre vie privée — aucun spam, seulement du contenu utile.
         </p>
       </div>

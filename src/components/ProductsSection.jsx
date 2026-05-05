@@ -66,7 +66,7 @@ export default function ProductsSection() {
 
         {/* Partie droite */}
         <div
-          className="bg-blue-700 text-white flex flex-col justify-center p-10 text-center md:text-left"
+          className="bg-[#03337F] text-white flex flex-col justify-center p-10 text-center md:text-left"
           data-aos="fade-left"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-5 tracking-wide">
@@ -82,7 +82,7 @@ export default function ProductsSection() {
 
           <Link
             to="/solutions"
-            className="inline-block bg-white text-blue-700 font-semibold px-8 py-4 text-lg hover:bg-gray-200 transition w-fit mx-auto md:mx-0 rounded-md"
+            className="inline-block bg-white text-[#03337F] font-semibold px-8 py-4 text-lg hover:bg-gray-200 transition w-fit mx-auto md:mx-0 rounded-md"
           >
             DÉCOUVRIR MAINTENANT
           </Link>

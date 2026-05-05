@@ -18,7 +18,7 @@ const WhyCota = () => {
 
         {/* === TITRE DE LA SECTION === */}
         <div className="text-center mb-10" data-aos="fade-down">
-          <h2 className="text-4xl sm:text-5xl md:text-5xl font-extrabold mb-4 leading-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
             Pourquoi<span className="text-[#0069BD]"> choisir COTA ?</span>
           </h2>
           <div className="flex justify-center gap-3 mt-4 md:mt-5">
@@ -83,7 +83,7 @@ const WhyCota = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-1">Engagement</h3>
                   <p className="text-gray-600 text-[12px] md:text-base lg:text-md">
-                    Nous œuvrons avec détermination et responsabilité pour le développement durable des partenaires.
+                    Nous œuvrons avec détermination et responsabilité pour le développement durable.
                   </p>
                 </div>
               </div>
