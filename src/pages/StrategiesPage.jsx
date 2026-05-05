@@ -6,7 +6,7 @@ import "aos/dist/aos.css"
 import NavMenu from "../components/NavMenu";
 import Footer from "../components/Footer";
 
-import headerImg from "../assets/atelier.jpg"
+import headerImg from "../assets/atelier.png"
 
 const strategies = [
   {
