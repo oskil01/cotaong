@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import hero from "../assets/hero.jpg";
-import about from "../assets/cota_fac.jpg"
+import about from "../assets/cota_fac.png"
 import slide2 from "../assets/slide2.png";
 import ImageVolontariat from "../assets/offers/volontaires.jpg";
 import Communique from "/communique.jpg";
 import NovatechImg from "/novatech.jpg";
-import CotaFac from "../assets/cota_fac.jpg"
+import CotaFac from "../assets/cota_fac.png"
 
 const slides = [
   {
