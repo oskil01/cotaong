@@ -11,10 +11,10 @@ const Footer = () => {
   const quickLinks = [
     {label: "Accueil", href:"#"},
     {label: "A propos de COTA", href:"a-propos"},
-    {label: "Notre équipe", href:"a-propos"},
+    {label: "Nos stratégies", href:"#"},
     {label: "Actualités", href:"actualites"},
-    {label: "Offres d'emploi", href:"opportunités"},
-    {label: "Confidentialité & Vie privée", href:"#"},
+    {label: "Opportunités", href:"opportunités"},
+    {label: "Ressources", href:"ressources"},
   ];
   const domaines = [
     {label: "Consultance & Accompagnement Organisationnel", href:'#'},
@@ -53,7 +53,7 @@ const Footer = () => {
       className="footer-bg text-white overflow-hidden relative py-12 
       px-4 sm:py-16 md:py-20 md:px-12 lg:px-20"
     > 
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-6xl mx-auto">
       {/* Containeur principal */}
       <div 
         className="grid grid-cols-1 md:grid-cols-2 
@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
           {/* A PROPOS */}
           <p className="text-gray-400 text-lg leading-relaxed">
-            Un partenaire dans l'action! Un pionnier dans le progrès!
+            Suivez-nous sur nos réseaux sociaux pour rester informés sur chacune de nos actions.
           </p>
           <div className="flex gap-4">
             {socialLinks.map((social, idx) => (

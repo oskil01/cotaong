@@ -43,7 +43,6 @@ export default function Partenaire() {
     "Jouir d’une bonne réputation auprès des bénéficiaires et des communautés d’accueil. ",
     "Bénéficier également d’une bonne réputation auprès des partenaires et bailleurs de fonds nationaux et internationaux.",
   ];
-
   const criteresInternationaux = [
     "Être une organisation internationale, une ONG internationale ou une entreprise légalement constituée conformément à la législation de son pays d’origine et autorisée à intervenir en République Démocratique du Congo conformément aux dispositions légales en vigueur. ",
     "Justifier d’au moins trois (3) années d’expérience professionnelle avérée dans la mise en œuvre de programmes ou projets liés notamment (i) accompagnement et consultance organisationnelle ; (ii) informatique et innovation technologique ; (iii) entrepreneuriat, développement économique et communautaire ; (iv) santé, protection des vies et de l’environnement ; (v) communication et sensibilisation communautaire ; (vi) protection, droits humains et gouvernance ou tout autre domaine pertinent. ",
@@ -62,7 +61,6 @@ export default function Partenaire() {
     "Jouir d’une bonne réputation institutionnelle, attestée par les partenaires, les bailleurs de fonds et les communautés bénéficiaires des projets. "
 
   ];
-
   const docsNationaux = [
     "Statuts notariés de l’organisation ou actes constitutifs de l’entreprise",
     "Règlement d’ordre intérieur ou manuel de gouvernance interne",
@@ -96,7 +94,6 @@ export default function Partenaire() {
     "Code d’éthique ou code de conduite",
     "Déclaration d’absence de conflit d’intérêts",
   ];
-
   const docsInternationaux = [
     "Statuts ou actes constitutifs de l’organisation ou de l’entreprise",
     "Certificat d’enregistrement légal dans le pays d’origine",
@@ -156,6 +153,7 @@ export default function Partenaire() {
           mt-30
           pt-38
           md:pt-0
+          my-10
           grid
           md:grid-cols-2
           gap-16
@@ -166,10 +164,10 @@ export default function Partenaire() {
           <div
             data-aos="fade-right"
             data-aos-delay="200"
-            className="text-center md:text-left"
+            className=
+            "text-center md:text-left "
           >
-
-            <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold mb-6">
               Ensemble, pour un développement inclusif et participatif
             </h1>
 

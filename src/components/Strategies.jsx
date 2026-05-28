@@ -92,7 +92,7 @@ export default function StrategiesSection() {
         {/* ===== BOUTON CENTRÉ EN BAS ===== */}
         <div className="text-center mt-12" data-aos="fade-up" data-aos-delay="700">
           <Link
-            to="#"
+            to="/strategies"
             className="inline-block text-lg bg-teal-600 text-white px-8 py-4 rounded-md font-semibold hover:bg-teal-700 transition"
           >
             En savoir plus

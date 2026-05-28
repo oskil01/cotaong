@@ -41,7 +41,7 @@ export default function RessourcesIntro() {
       <div className="absolute inset-0 bg-gradient-to-br from-[#03337F]/70 via-[#011433]/40 to-[#006176]/60 mix-blend-overlay z-0"></div>
 
       {/* === CONTENU GLOBAL CENTRÉ ET AÉRÉ === */}
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 max-w-6xl mx-auto">
         {/* === TITRE PRINCIPAL === */}
         <div className="text-center mb-16" data-aos="fade-down">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight">

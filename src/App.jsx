@@ -32,6 +32,7 @@ import ActualiteDetails from "./pages/ActualitesDetails";
 import ActualitesPage from "./pages/Actualites";
 import DepotCvIndisponible from "./pages/DepotCvIndisponible";
 import CavPage from "./pages/CavPage"
+import ContactPage from "./pages/ContactPage";
 import Partenaires from "./pages/Partenaire"
 import RessourcesPage from "./pages/RessourcesPage"
 import Solutions from "./pages/Solutions";
@@ -51,7 +52,8 @@ const Home = () => (
     <Domaines />
     <Strategies />
     <Ressources />
-    <Contact />
+    {/* <Contact /> */}
+    <ContactPage />
     <NewsLetter />
     <Footer />
   </div>
@@ -206,6 +208,14 @@ const AppRoutes = () => {
               element={
                 <PageTransition>
                   <RessourcesPage />
+                </PageTransition>
+              }
+            />
+            <Route
+              path="/contact"
+              element={
+                <PageTransition>
+                  <ContactPage />
                 </PageTransition>
               }
             />
