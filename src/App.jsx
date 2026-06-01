@@ -36,7 +36,8 @@ import ContactPage from "./pages/ContactPage";
 import Partenaires from "./pages/Partenaire"
 import RessourcesPage from "./pages/RessourcesPage"
 import Solutions from "./pages/Solutions";
-import StrategiesPage from "./pages/StrategiesPage"
+import StrategiesPage from "./pages/StrategiesPage";
+import ProjectsPage from "./pages/ProjectsPage"
 
 // === Page d'accueil combinée ===
 const Home = () => (
@@ -52,8 +53,8 @@ const Home = () => (
     <Domaines />
     <Strategies />
     <Ressources />
-    {/* <Contact /> */}
-    <ContactPage />
+    <Contact />
+    {/* <ContactPage /> */}
     <NewsLetter />
     <Footer />
   </div>
@@ -219,6 +220,14 @@ const AppRoutes = () => {
                 </PageTransition>
               }
             />
+            {/* <Route
+              path="/projets"
+              element={
+                <PageTransition>
+                  <ProjectsPage />
+                </PageTransition>
+              }
+            /> */}
           </Routes>
         </AnimatePresence>
       )}
