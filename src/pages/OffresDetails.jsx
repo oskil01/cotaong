@@ -6,77 +6,32 @@ import Footer from "../components/Footer";
 
 import { useParams, Link } from "react-router-dom";
 
-import Offre01 from "../components/offers/Offre01";
-import Offre02 from "../components/offers/Offre02";
-import Offre03 from "../components/offers/Offre03";
-import Offre04 from "../components/offers/Offre04";
-import Offre05 from "../components/offers/Offre05";
-import Offre06 from "../components/offers/Offre06";
-import Offre07 from "../components/offers/Offre07";
-import Offre08 from "../components/offers/Offre08";
+import Offre09 from "../components/offers/Offre09";
+import Offre10 from "../components/offers/Offre10";
+import Offre11 from "../components/offers/Offre11";
 
 const offres = [
   {
-    id: 1,
+    id: 9,
     content :(
       <>
-        <Offre01 />
+        <Offre09 />
       </>
     )
   },
   {
-    id: 2,
+    id: 10,
     content :(
       <>
-        <Offre02 />
+        <Offre10 />
       </>
     )
   },
   {
-    id: 3,
+    id: 11,
     content :(
       <>
-        <Offre03 />
-      </>
-    )
-  },
-  {
-    id: 4,
-    content :(
-      <>
-        <Offre04 />
-      </>
-    )
-  },
-  {
-    id: 5,
-    content :(
-      <>
-        <Offre05 />
-      </>
-    )
-  },
-   {
-    id: 6,
-    content :(
-      <>
-        <Offre06 />
-      </>
-    )
-  },
-   {
-    id: 7,
-    content :(
-      <>
-        <Offre07 />
-      </>
-    )
-  },
-   {
-    id: 8,
-    content :(
-      <>
-        <Offre08 />
+        <Offre11 />
       </>
     )
   },

@@ -44,7 +44,7 @@ const Home = () => (
   <div className="pt-17 md:pt-30">
     <NavMenu />
     <Hero />
-    {/* <JobOffers /> */}
+    <JobOffers />
     <Cav />
     <Actualites />
     <About />

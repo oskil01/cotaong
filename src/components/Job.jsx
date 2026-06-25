@@ -3,42 +3,21 @@ import { ChevronRight, Plus } from "lucide-react";
 
 const jobs = [
   {
-    title: "Recrutement d’Un(e) Directeur(trice) de programmes dans le cadre de la mise en oeuvre du PAO-27 au Tanganyika",
+    title: "Recrutement de 04 Coordonnateurs Terrain pour la constitution de la base des données des agents temporaires",
     org: "COTA ONG",
-    location: "Kalemie",
-    status: "closed",
-  },
-  {
-    title: "Recrutement d’Un(e) Directeur(trice) Financier(e) et Administratif(ve) dans le cadre de la mise en oeuvre du PAO-27 au Tanganyika",
-    org: "COTA ONG",
-    location: "Kalemie",
-    status: "closed",
-  },
-  {
-    title: "Recrutement d’Un(e) Officier(ère) MEAL dans le cadre de la mise en oeuvre du PAO-27 au Tanganyika",
-    org: "COTA ONG",
-    location: "Kalemie",
-    status: "closed",
-  },
-];
-
-const tenders = [
-  {
-    title: "Appels à candidatures pour les contrats de partenariat technique",
-    org: "COTA ONG",
-    location: "Kindu",
+    location: "Tanganyika, Sud-Kivu, Nord-Kivu, Maniema",
     status: "open",
   },
   {
-    title: "Appels à candidatures pour les contrats de partenariat technique",
+    title: "Recrutement de Superviseurs Terrain pour la constitution de la base des données des agents temporaires",
     org: "COTA ONG",
     location: "Kalemie",
-    status: "closed",
+    status: "open",
   },
   {
-    title: "Appels à candidatures pour les contrats de partenariat technique",
+    title: "Recrutement de Superviseurs Terrain pour la constitution de la base des données des agents temporaires",
     org: "COTA ONG",
-    location: "Uvira",
+    location: "Kalemie",
     status: "closed",
   },
 ];

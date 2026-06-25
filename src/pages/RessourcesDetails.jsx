@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 import NavMenu from "../components/NavMenu";
 import Footer from "../components/Footer";
 
-import AfficheOffre from '../assets/offers/AfficheOffre.jpg'
+import AfficheOffre from '../assets/offers/offres_cover.jpg'
 
 export default function RessourcesDetails() {
   const navigate = useNavigate();
@@ -24,149 +24,56 @@ export default function RessourcesDetails() {
   // === Données des offres ===
   const offres = [
     {
-      id: 1,
-      titre: "01/AMI-DP/COTA/026 : Recrutement d'Un(e) Directeur(trice) de progragrammes",
+      id: 9,
+      titre: "09/COTA/ESC-BD/RDC/026 : Recrutement de 04 Coordonnateurs Terrain pour la constitution de la base des données des agents temporaires",
       organisation: "CORPS TECHNIQUE POUR L'ACCOMPAGNEMENT (COTA ONG)",
       description: 
       <>
-        Dans le cadre de renforcer son dispositif de gestion
-        et ses capacités opérationnelles en rapport avec la 
-        mise en œuvre de son plan d’action 2026-2027 (PAO-27)
-        , l’ONG COTA cherche à recruter <span className="font-bold">Un(e) Directeur(trice)  de programmes </span> 
-        pour sa direction au Tanganyika. 
+        L'ONG COTA cherche à constituer une base de données de professionnels hautement qualifiés pouvant être mobilisés 
+        rapidement dans le cadre des études, enquêtes, évaluations, recherches, recensements, missions de suivi-évaluation 
+        et autres opérations de terrain. 
       </>,
-      number: "1",
-      location: "Tanganyika, RDC",
-      contrat: "CDD (1 an renouvelable avec 3 mois de période probatoire)",
-      date: "25 Janvier 2026",
-      deadline: "28 Février 2026",
+      number: "04",
+      location: "Tanganyika, Sud-Kivu, Nord-Kivu et Maniema",
+      contrat: "Temporaire (en cas de besoin)",
+      date: "25 juin 2026",
+      deadline: "02 juillet 2026",
     },
      {
-      id: 2,
-      titre: "02/AMI-DAF/COTA/026 : Recrutement d'Un(e) Directeur(trice) Financier(ère) et Administratif(ve) (DAF)",
+      id: 10,
+      titre: "10/COTA/ESC-BD/RDC/026 : Recrutement des Superviseurs Terrain pour la constitution de la base des données des agents temporaires",
       organisation: "CORPS TECHNIQUE POUR L'ACCOMPAGNEMENT (COTA ONG)",
       description: 
       <>
-        Dans le cadre de renforcer son dispositif de gestion
-        et ses capacités opérationnelles en rapport avec la 
-        mise en œuvre de son plan d’action 2026-2027 (PAO-27)
-        , l’ONG COTA cherche à recruter <span className="font-bold">Un(e) Directeur(trice) Administratif(ve) et Financier(ère) </span> 
-        pour sa direction au Tanganyika. 
+        L'ONG COTA cherche à constituer une base de données de professionnels hautement qualifiés pouvant être mobilisés 
+        rapidement dans le cadre des études, enquêtes, évaluations, recherches, recensements, missions de suivi-évaluation 
+        et autres opérations de terrain. 
+
       </>,
-      number: "1",
-      location: "Tanganyika, RDC",
-      contrat: "CDD (1 an renouvelable avec 3 mois de période probatoire)",
-      date: "25 Janvier 2026",
-      deadline: "28 Février 2026",
+      number: "Selon le besoin",
+      location: "Tanganyika, Sud-Kivu, Nord-Kivu et Maniema",
+      contrat: "Temporaire (en cas de besoin)",
+      date: "25 juin 2026",
+      deadline: "02 juillet 2026",
     },
     {
-      id: 3,
-      titre: "03/AMI-OM/COTA/026 : Recrutement d'Un(e) Officier MEAL ",
+      id: 11,
+      titre: "11/COTA/ESC-BD/RDC/026 : Recrutement des Enqueteurs pour la constitution de la base des données des agents temporaires",
       organisation: "CORPS TECHNIQUE POUR L'ACCOMPAGNEMENT (COTA ONG)",
       description: 
       <>
-        Dans le cadre de renforcer son dispositif de gestion
-        et ses capacités opérationnelles en rapport avec la 
-        mise en œuvre de son plan d’action 2026-2027 (PAO-27)
-        , l’ONG COTA cherche à recruter <span className="font-bold">Un(e) Officier MEAL </span> 
-        pour sa direction au Tanganyika. 
+        L'ONG COTA cherche à constituer une base de données de professionnels hautement qualifiés pouvant être mobilisés 
+        rapidement dans le cadre des études, enquêtes, évaluations, recherches, recensements, missions de suivi-évaluation 
+        et autres opérations de terrain. 
+
       </>,
-      number: "1",
-      location: "Tanganyika, RDC",
-      contrat: "CDD (1 an renouvelable avec 3 mois de période probatoire)",
-      date: "25 Janvier 2026",
-      deadline: "28 Février 2026",
+      number: "Selon le besoin",
+      location: "Tanganyika, Sud-Kivu, Nord-Kivu et Maniema",
+      contrat: "Temporaire (en cas de besoin)",
+      date: "25 juin 2026",
+      deadline: "02 juillet 2026",
     },
-    {
-      id: 4,
-      titre: "04/AMI-LOG/COTA/026 : Recrutement d'Un(e) Logisticien(ne) ",
-      organisation: "CORPS TECHNIQUE POUR L'ACCOMPAGNEMENT (COTA ONG)",
-      description: 
-      <>
-        Dans le cadre de renforcer son dispositif de gestion
-        et ses capacités opérationnelles en rapport avec la 
-        mise en œuvre de son plan d’action 2026-2027 (PAO-27)
-        , l’ONG COTA cherche à recruter <span className="font-bold">Un(e) Logisticien(ne) </span> 
-        pour sa direction au Tanganyika. 
-      </>,
-      number: "1",
-      location: "Tanganyika, RDC",
-      contrat: "CDD (1 an renouvelable avec 3 mois de période probatoire)",
-      date: "25 Janvier 2026",
-      deadline: "28 Février 2026",
-    },
-    {
-      id: 5,
-      titre: "05/AMI-DB/COTA/026 : Recrutement d'Un(e) Responsable Data Base ",
-      organisation: "CORPS TECHNIQUE POUR L'ACCOMPAGNEMENT (COTA ONG)",
-      description: 
-      <>
-        Dans le cadre de renforcer son dispositif de gestion
-        et ses capacités opérationnelles en rapport avec la 
-        mise en œuvre de son plan d’action 2026-2027 (PAO-27)
-        , l’ONG COTA cherche à recruter <span className="font-bold">Un(e) Responsable Data Base </span> 
-        pour sa direction au Tanganyika. 
-      </>,
-      number: "1",
-      location: "Tanganyika, RDC",
-      contrat: "CDD (1 an renouvelable avec 3 mois de période probatoire)",
-      date: "25 Janvier 2026",
-      deadline: "28 Février 2026",
-    },
-    {
-      id: 6,
-      titre: "06/AMI-CGSI/COTA/026 : Recrutement d'Un(e) Responsable de communication et gestion du système de l’information",
-      organisation: "CORPS TECHNIQUE POUR L'ACCOMPAGNEMENT (COTA ONG)",
-      description: 
-      <>
-        Dans le cadre de renforcer son dispositif de gestion
-        et ses capacités opérationnelles en rapport avec la 
-        mise en œuvre de son plan d’action 2026-2027 (PAO-27)
-        , l’ONG COTA cherche à recruter <span className="font-bold">Un(e) Responsable de communication et GSI </span> 
-        pour sa direction au Tanganyika. 
-      </>,
-      number: "1",
-      location: "Tanganyika, RDC",
-      contrat: "CDD (1 an renouvelable avec 3 mois de période probatoire)",
-      date: "25 Janvier 2026",
-      deadline: "28 Février 2026",
-    },
-    {
-      id: 7,
-      titre: "07/AMI-AC/COTA/026 : Recrutement de Trois(3) Assistant(e)s Comptables (Tanganyika, Sud-kivu et Maniema)",
-      organisation: "CORPS TECHNIQUE POUR L'ACCOMPAGNEMENT (COTA ONG)",
-      description: 
-      <>
-        Dans le cadre de renforcer son dispositif de gestion
-        et ses capacités opérationnelles en rapport avec la 
-        mise en œuvre de son plan d’action 2026-2027 (PAO-27)
-        , l’ONG COTA cherche à recruter <span className="font-bold">Trois(3) Assistant(e)s Comptables </span> 
-        pour sa direction et ses antennes. 
-      </>,
-      number: "3",
-      location: "Tanganyika, Sud-kivu et Maniema",
-      contrat: "CDD (1 an renouvelable avec 3 mois de période probatoire)",
-      date: "25 Janvier 2026",
-      deadline: "28 Février 2026",
-    },
-    {
-      id: 8,
-      titre: "08/AMI-PF/COTA/026 : Recrutement de Deux(2) Points Focaux (Sud-kivu et Maniema)",
-      organisation: "CORPS TECHNIQUE POUR L'ACCOMPAGNEMENT (COTA ONG)",
-      description: 
-      <>
-        Dans le cadre de renforcer son dispositif de gestion
-        et ses capacités opérationnelles en rapport avec la 
-        mise en œuvre de son plan d’action 2026-2027 (PAO-27)
-        , l’ONG COTA cherche à recruter <span className="font-bold">Deux(2) Points Focaux </span> 
-        pour sa direction et ses antennes. 
-      </>,
-      number: "2",
-      location: "Sud-kivu et Maniema",
-      contrat: "CDD (1 an renouvelable avec 3 mois de période probatoire)",
-      date: "25 Janvier 2026",
-      deadline: "28 Février 2026",
-    },
+  
   ];
 
   // Fonction de navigation vers la page OffresDetails

@@ -37,7 +37,7 @@ const Footer = () => {
     },
     {
       icon: MapPin, 
-      text:'202 Avenue Tanganyika, Quartier Kituku, Commune de Lukuga, ville de Kalemie, Province du Tanganyika, RD Congo', 
+      text:'109, Avenue OUA, Quartier Kahite, Commune de Lukuga, ville de Kalemie, Province du Tanganyika, RD Congo', 
       color:'text-[#006176]',
       multiline: true
     },
