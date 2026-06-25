@@ -11,14 +11,14 @@ const jobs = [
   {
     title: "Recrutement de Superviseurs Terrain pour la constitution de la base des données des agents temporaires",
     org: "COTA ONG",
-    location: "Kalemie",
+    location: "Tanganyika, Sud-Kivu, Nord-Kivu, Maniema",
     status: "open",
   },
   {
-    title: "Recrutement de Superviseurs Terrain pour la constitution de la base des données des agents temporaires",
+    title: "Recrutement des Enqueteurs Terrain pour la constitution de la base des données des agents temporaires",
     org: "COTA ONG",
-    location: "Kalemie",
-    status: "closed",
+    location: "Tanganyika, Sud-Kivu, Nord-Kivu, Maniema",
+    status: "open",
   },
 ];
 
