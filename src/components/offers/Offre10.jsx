@@ -261,7 +261,7 @@ export default function Offre09() {
                 try {
                   await navigator.share({
                     title: document.title,
-                    text: `Appel à candidatures : Recrutement des Coordonnateurs Terrain pour la constitution de la base des données des agents temporaires.`,
+                    text: `Appel à candidatures : Recrutement des Superviseurs Terrain pour la constitution de la base des données des agents temporaires.`,
                     url: window.location.href,
                   });
                 } catch (err) {
