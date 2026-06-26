@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 import NavMenu from "../components/NavMenu";
 import Footer from "../components/Footer";
 
-import AfficheOffre from '../assets/offers/offres_cover.jpg'
+import AfficheOffre from '../assets/offers/Offres_Cover.jpg'
 
 export default function RessourcesDetails() {
   const navigate = useNavigate();
